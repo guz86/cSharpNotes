@@ -3,11 +3,11 @@
 Function
 ========================
 How to advance conventional data as advanced arrays
-
-`static void Main(string[] args)
-        {
-        Console.WriteLine("Hi");
-`        // Pass on the argument - "Pay the service"  '!'
+Markup :  `code()
+`static void Main(string[] args)`
+        `{`
+        `Console.WriteLine("Hi");`
+`        `// Pass on the argument - "Pay the service"  '!'`
 		WriteError("Error. No Internet", symbol: '!');
 		Console.WriteLine("");
         // Pass on the argument - "Pay the service"  Yellow
