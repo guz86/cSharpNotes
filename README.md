@@ -14,7 +14,7 @@ How to advance conventional data as advanced arrays
             WriteError("Pay the service", ConsoleColor.Yellow);
             }
         // ConsoleColor.Red  '#' - default
-        static void WriteError(string text, ConsoleColor color = ConsoleColor.Red, char symbol = '#')
+		static void WriteError(string text, ConsoleColor color = ConsoleColor.Red, char symbol = '#')
             {
                 // remember the current text color in the console in the variable
                 ConsoleColor defaulColor = Console.ForegroundColor;
