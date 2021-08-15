@@ -1,6 +1,6 @@
 # cSharpNotes
 
-Function (and / or) methods
+Function (and / or) method
 ========================
 How to advance conventional data as advanced arrays
 
