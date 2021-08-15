@@ -2,6 +2,11 @@
 
 Function (and / or) method
 ========================
+
+<Access Specifier> <Return Type> <Method Name>(Parameter List) {
+   Method Body
+}
+
 How to advance conventional data as advanced arrays
 
 		static void Main(string[] args)
