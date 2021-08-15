@@ -49,13 +49,8 @@ Array
         static void Main(string[] args)
 		{
             int[]  myArray = new int [5];
-            // передаем ссылку на область памяти
-            // EditArray(myArray, 2, 5);
-
             myArray = EditArray(myArray, 2, 10);
             Console.WriteLine(myArray[2]);
-
-
         }
 
         // function modifies the array
