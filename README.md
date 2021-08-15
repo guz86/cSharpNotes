@@ -29,33 +29,12 @@ ref и out
 
         static void Main(string[] args)
         {
-           
-            
             int uSum, uX = 2, uY = 3;
 
             // ref uSum - NEED int uSum = 0  
 
-            // MySum(uSum, uX, uY);
-            // 0
-
-            //MySum(ref uSum, uX, uY);
-
-            //out - обязует самостоятельно проиниализировать переменную
-
             MySum(out uSum, uX, uY);
-
-            Console.WriteLine(uSum);
-
-            Console.WriteLine("-------------");
-
-            int[]  myArray = new int [5];
-            // передаем ссылку на область памяти
-            // EditArray(myArray, 2, 5);
-
-            myArray = EditArray(myArray, 2, 10);
-            Console.WriteLine(myArray[2]);
-
-
+			Console.WriteLine(uSum);
         }
   
         // ref out -  when you want to return more than 1 value
