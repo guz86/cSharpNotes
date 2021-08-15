@@ -64,7 +64,26 @@ Array
         }
 
 
+-resize array
 
+        static void Main(string[] args)
+        {
+            int[] myArrayResize = new int[5];
+            myArrayResize = ResizeArray(myArrayResize, 10);
+        }
+
+        // recreate an array with a new size
+        static int[] ResizeArray (int[] array, int size)
+        {   
+            int[] tempArray = new int[size];
+            // migrate data to a new array
+            for (int i = 0; i < array.Length; i++)
+            {
+                tempArray[i] = array[i];
+            }
+            array = tempArray;
+            return array;
+        }
 
 
 
