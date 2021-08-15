@@ -43,8 +43,10 @@ ref и out
         {
             sum = x + y;
         }
+		
 Array
-		static void Main(string[] args)
+		        
+        static void Main(string[] args)
 		{
             int[]  myArray = new int [5];
             // передаем ссылку на область памяти
