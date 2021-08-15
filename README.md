@@ -25,7 +25,7 @@ How to advance conventional data as advanced arrays
                 Console.ForegroundColor = defaulColor;
             }
 
-ref и out
+## ref и out
 
         static void Main(string[] args)
         {
@@ -44,7 +44,7 @@ ref и out
             sum = x + y;
         }
 		
-Array
+## Array
 		        
         static void Main(string[] args)
 		{
@@ -64,7 +64,7 @@ Array
         }
 
 
--resize array - overload
+## resize array - overload
 
 		// two functions with the same name (ResizeArray) and different signature
         static void Main(string[] args)
