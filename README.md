@@ -64,12 +64,17 @@ Array
         }
 
 
--resize array
+-resize array - overload
 
+		// two functions with the same name (ResizeArray) and different signature
         static void Main(string[] args)
         {
             int[] myArrayResize = new int[5];
             myArrayResize = ResizeArray(myArrayResize, 10);
+            
+            int[,] myArrayResizeTwo = new int[5, 5];
+            myArrayResizeTwo = ResizeArray(myArrayResizeTwo, 10, 10);
+            
         }
 
         // recreate an array with a new size
@@ -85,6 +90,22 @@ Array
             return array;
         }
 
+       static int[,] ResizeArray (int[,] array, int x, int y)
+        {
+            int[,] tempArray = new int[x,y];
+            // migrate data to a new array
+            for (int i = 0; i < array.GetLength(0); i++)
+            {
+                for (int j = 0; j < array.GetLength(1); j++)
+                {
+                    tempArray[i,j] = array[i,j];
+                }
+            }
+            array = tempArray;
+            return array;
+        }
+        
 
+-end
 
 
