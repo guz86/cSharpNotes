@@ -4,7 +4,7 @@ Function
 ========================
 How to advance conventional data as advanced arrays
 
-`static void Main(string[] args)
+<   static void Main(string[] args)
         {
         Console.WriteLine("Hi");
         // Pass on the argument - "Pay the service"  '!'
@@ -23,7 +23,7 @@ static void WriteError(string text, ConsoleColor color = ConsoleColor.Red, char 
             // returns the current color
             Console.ForegroundColor = defaulColor;
         }
-`
+>
 
 
 
