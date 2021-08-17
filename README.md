@@ -83,6 +83,13 @@ How to advance conventional data as advanced arrays
         }
 
         // recreate an array with a new size
+        /// <summary>
+        /// Migrate data to a new array
+        /// </summary>
+        /// <param name="array">Array</param>
+        /// <param name="size">Size new Array</param>
+        /// <returns>New Size Array</returns>
+        
         static int[] ResizeArray (int[] array, int size)
         {   
             int[] tempArray = new int[size];
