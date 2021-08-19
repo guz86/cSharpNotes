@@ -119,5 +119,15 @@ How to advance conventional data as advanced arrays
         
 
 -end
+## English alphabet with 26 letters!
+            // English alphabet with 26 letters!
+            char[] letters = new char[26];
+            sbyte k = 0;
+
+            for (char c = 'a'; c <= 'z'; c++)
+            {
+                letters[k] = c;
+                k++;
+            }
 
 
