@@ -34,6 +34,12 @@ Operator ??=
     str ??= string.Empty;
     Console.WriteLine("number of characters in str " + str.Length);
 
+array
+
+      int[] myArray = null;
+      myArray ??= new int[0];
+      Console.WriteLine(myArray.Length);
+
 Operator ?.
 ========================
 
