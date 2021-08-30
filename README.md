@@ -1,5 +1,32 @@
 # cSharpNotes
 
+NULL Integration  - Operator ??
+========================
+
+            string str = null;
+            string result;
+
+            if (str == null)
+            {
+                result = "нет данных в str";
+            }
+            else
+            {
+                result = str;
+            }
+            Console.WriteLine(result);
+
+
+
+Operator ??=
+========================
+
+Operator ?.
+========================
+
+
+
+
 Function (and / or) method
 ========================
 
@@ -129,5 +156,3 @@ How to advance conventional data as advanced arrays
                 letters[k] = c;
                 k++;
             }
-
-
