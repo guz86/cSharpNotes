@@ -30,6 +30,9 @@ easy
 Operator ??=
 ========================
 
+    string str = null;
+    str ??= string.Empty;
+    Console.WriteLine("number of characters in str " + str.Length);
 
 Operator ?.
 ========================
