@@ -16,6 +16,10 @@ NULL Integration  - Operator ??
             }
             Console.WriteLine(result);
 
+How to use
+
+            string resultNew = str ?? string.Empty;
+            Console.WriteLine("number of characters in str " + resultNew.Length);
 
 
 Operator ??=
