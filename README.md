@@ -1,39 +1,12 @@
 # cSharpNotes
 
-NULL Integration  - Operator ??
-========================
-
-            string str = null;
-            string result;
-
-            if (str == null)
-            {
-                result = "нет данных в str";
-            }
-            else
-            {
-                result = str;
-            }
-            Console.WriteLine(result);
-
-
-
-Operator ??=
-========================
-
-Operator ?.
-========================
-
-
-
-
 Function (and / or) method
 ========================
 
 	<Access Specifier> <Return Type> <Method Name>(Parameter List) {
    	Method Body
 	}
-
+s
 How to advance conventional data as advanced arrays
 
 		static void Main(string[] args)
