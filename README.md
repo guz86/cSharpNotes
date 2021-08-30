@@ -43,6 +43,10 @@ array
 Operator ?.
 ========================
 
+    using System.Linq;
+    ...
+    int [] myArray = null;
+    Console.WriteLine("Sum of myArray elements " + (myArray?.Sum() ?? 0));
 
 Function (and / or) method
 ========================
