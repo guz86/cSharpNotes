@@ -21,10 +21,15 @@ How to use
     string str = null;
     string resultNew = str ?? string.Empty;
     Console.WriteLine("number of characters in str " + resultNew.Length);
+    
+easy
 
+    string str = null;
+    Console.WriteLine(str ?? "no data in str");
 
 Operator ??=
 ========================
+
 
 Operator ?.
 ========================
