@@ -1,5 +1,18 @@
 # cSharpNotes
 
+NULL Integration  - Operator ??
+========================
+
+
+Operator ??=
+========================
+
+Operator ?.
+========================
+
+
+
+
 Function (and / or) method
 ========================
 
@@ -129,5 +142,3 @@ How to advance conventional data as advanced arrays
                 letters[k] = c;
                 k++;
             }
-
-
