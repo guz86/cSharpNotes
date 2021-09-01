@@ -125,7 +125,20 @@ How to advance conventional data as advanced arrays
 
             return array;
         }
+        
+## modifies link array
+		        
+        static void Main(string[] args)
+		{
+            int[]  myArray = {1,3,5};
+            myArray = EditArray(myArray);
+        }
 
+        // function modifies the array
+        static void EditArray(int[] array)
+        {
+            array = null;
+        }
 
 ## resize array - overload
 
