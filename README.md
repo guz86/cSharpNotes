@@ -156,6 +156,18 @@ How to advance conventional data as advanced arrays
         // delete one reference
             arr = null;
         }
+        
+## reference local variables
+ 			int[] myArray = { 1, 3, 5 };
+            int b = myArray[0];
+            b = 5;
+            // myArray[0] == 1
+            
+            int[] myArray = { 1, 3, 5 };
+            ref int b = ref myArray[0];
+            b = 5;
+            // myArray[0] == 5
+
 
 ## resize array - overload
 
