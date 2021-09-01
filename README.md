@@ -80,22 +80,28 @@ How to advance conventional data as advanced arrays
 
 ## ref и out
 
+
+ 		// ref out -  when you want to return more than 1 value
         static void Main(string[] args)
         {
-            int uSum, uX = 2, uY = 3;
-
-            // ref uSum - NEED int uSum = 0  
-
-            MySum(out uSum, uX, uY);
-			Console.WriteLine(uSum);
+            int uSum = 0, uX = 2, uY = 3;
+            MySum(ref uSum, uX, uY);
         }
-  
-        // ref out -  when you want to return more than 1 value
-        //static void MySum(ref int sum, int x, int y)
-        static void MySum(out int sum, int x, int y)
+        static void MySum(ref int sum, int x, int y)
         {
             sum = x + y;
         }
+        // out
+        static void Main(string[] args)
+        {
+            int uSum, uX = 2, uY = 3;
+            MySum(out uSum, uX, uY);
+        }
+        static void MySum(out int sum, int x, int y)
+        {
+            sum = x + y;
+        } 
+       
 		
 ## Array
 		        
