@@ -78,7 +78,7 @@ How to advance conventional data as advanced arrays
                 Console.ForegroundColor = defaulColor;
             }
 
-## ref и out
+## ref
 
 
  		// ref out -  when you want to return more than 1 value
@@ -91,7 +91,10 @@ How to advance conventional data as advanced arrays
         {
             sum = x + y;
         }
-        // out
+        
+
+## out
+        
         static void Main(string[] args)
         {
             int uSum, uX = 2, uY = 3;
