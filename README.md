@@ -134,7 +134,6 @@ How to advance conventional data as advanced arrays
             int[] myArray = { 1, 3, 5 };
             EditArray(myArray);
         }
- 
         // myArray and arr - two labels that refer to the same memory region 
         // refer is copied
         static void EditArray(int[] arr)
@@ -143,13 +142,13 @@ How to advance conventional data as advanced arrays
             arr = null;
         }
         
+        
         // link array will be changed (ref)
         static void Main(string[] args)
         {
             int[] myArray = { 1, 3, 5 };
             EditArray(ref myArray);
         }
- 
         //  in arr link passed to link
         //  refer is no copied
         static void EditArray(ref int[] arr)
