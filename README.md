@@ -183,6 +183,7 @@ How to advance conventional data as advanced arrays
             return arr[0];
         }
         
+        // pass a reference to an element in memory range to a reference local variable
         static void Main(string[] args)
         {
             int[] myArray = { 1, 3, 5 };
