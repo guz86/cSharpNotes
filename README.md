@@ -107,7 +107,7 @@ How to advance conventional data as advanced arrays
         } 
        
 		
-## Array
+## modifies the array
 		        
         static void Main(string[] args)
 		{
@@ -121,7 +121,7 @@ How to advance conventional data as advanced arrays
         {
             // recreating the array
             array = new int[6];
-            array[index]= value;
+            array[index] = value;
 
             return array;
         }
