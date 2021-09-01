@@ -158,6 +158,7 @@ How to advance conventional data as advanced arrays
         }
         
 ## reference local variables
+
  			int[] myArray = { 1, 3, 5 };
             int b = myArray[0];
             b = 5;
@@ -167,6 +168,32 @@ How to advance conventional data as advanced arrays
             ref int b = ref myArray[0];
             b = 5;
             // myArray[0] == 5
+            
+## return reference values
+
+        static void Main(string[] args)
+        {
+            int[] myArray = { 1, 3, 5 };
+            int b = Foo(myArray);
+            b = 6;
+            // myArray[0] = 1
+        }
+        static int Foo(int[] arr)
+        {
+            return arr[0];
+        }
+        
+        static void Main(string[] args)
+        {
+            int[] myArray = { 1, 3, 5 };
+            ref int b = ref Foo(myArray);
+            b = 6;
+            // myArray[0] = 6
+        }
+        static ref int Foo(int[] arr)
+        {
+            return ref arr[0];
+        }
 
 
 ## resize array - overload
