@@ -108,7 +108,7 @@ How to advance conventional data as advanced arrays
        
 		
 ## modifies the array
-		        
+		//  you can only edit data in the array       
         static void Main(string[] args)
 		{
             int[]  myArray = new int [5];
@@ -127,17 +127,35 @@ How to advance conventional data as advanced arrays
         }
         
 ## modifies link array
-		        
+		
+		// link array will not be changed
         static void Main(string[] args)
-		{
-            int[]  myArray = {1,3,5};
-            myArray = EditArray(myArray);
-        }
-
-        // function modifies the array
-        static void EditArray(int[] array)
         {
-            array = null;
+            int[] myArray = { 1, 3, 5 };
+            EditArray(myArray);
+        }
+ 
+        // myArray and arr - two labels that refer to the same memory region 
+        // refer is copied
+        static void EditArray(int[] arr)
+        {
+        // delete one reference
+            arr = null;
+        }
+        
+        // link array will be changed (ref)
+        static void Main(string[] args)
+        {
+            int[] myArray = { 1, 3, 5 };
+            EditArray(ref myArray);
+        }
+ 
+        //  in arr link passed to link
+        //  refer is no copied
+        static void EditArray(ref int[] arr)
+        {
+        // delete one reference
+            arr = null;
         }
 
 ## resize array - overload
