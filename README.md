@@ -98,8 +98,8 @@ How to advance conventional data as advanced arrays
         
         static void Main(string[] args)
         {
-            int uSum, uX = 2, uY = 3;
-            MySum(out uSum, uX, uY);
+            int uX = 2, uY = 3;
+            MySum(out int uSum, uX, uY);
         }
         static void MySum(out int sum, int x, int y)
         {
