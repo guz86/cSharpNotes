@@ -246,7 +246,37 @@ How to advance conventional data as advanced arrays
         }
         
 
--end
+## params
+
+        static int Sum(params int[] parameters)
+        {
+            int result = 0;
+            for (int i = 0; i < parameters.Length; i++)
+            {
+                result += parameters[i];
+            }
+            return result;
+        }
+        
+        
+        static void Foo(params object[] parameters)
+        {
+            string message = "Data type: {0}, value: {1}";
+
+            foreach (var item in parameters)
+            {
+                Console.WriteLine(message, item.GetType(), item);
+            }
+        }
+
+
+        static void Main(string[] args)
+        {
+            int result = Sum(3, 4, 4, 3, 2, 54);
+            Foo("stroka",'$',332,33.33f, true);
+        }
+        
+
 ## English alphabet with 26 letters!
             // English alphabet with 26 letters!
             char[] letters = new char[26];
